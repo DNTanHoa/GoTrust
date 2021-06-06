@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ServiceStack" Version="5.*" />
+    <PackageReference Include="ServiceStack.OrmLite.Sqlite" Version="5.11.1" />
+    <PackageReference Include="ServiceStack.Server" Version="5.11.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GoTrust.ServiceInterface\GoTrust.ServiceInterface.csproj" />
+    <ProjectReference Include="..\GoTrust.ServiceModel\GoTrust.ServiceModel.csproj" />
+  </ItemGroup>
+
+</Project>
